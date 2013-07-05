@@ -21,7 +21,7 @@ public class TransformationService {
 		
 
 		StreamSource xmlSource=new StreamSource(new StringReader(xmlSourceString));
-		transformer.transform(xmlSource, new StreamResult(new FileWriter("/Workspace/testSpringHibernate/GeneratedXML.xml")));
+		transformer.transform(xmlSource, new StreamResult(new FileWriter("./GeneratedXML.xml")));
 		
 				}
 }

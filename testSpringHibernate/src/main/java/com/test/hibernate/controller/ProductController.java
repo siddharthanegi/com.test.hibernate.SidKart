@@ -200,7 +200,7 @@ public class ProductController {
 			LOGGER_INFO.error(e.toString());
 		}
 		LOGGER_INFO.info("You are here !"+productList.size());  
-		File xmlFile= new File("/Workspace/testSpringHibernate/GeneratedXML.xml");
+		File xmlFile= new File("./GeneratedXML.xml");
 		byte bytes[]=FileCopyUtils.copyToByteArray(xmlFile);
 	    response.setHeader("Content-Disposition", "attachment; filename=\"" + xmlFile.getName() + "\"");
 		response.setContentLength(bytes.length);
